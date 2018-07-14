@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+    <EditText
+        android:id="@+id/activity_register_username_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="用户名"
+        android:paddingLeft="30dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/activity_register_password_editText1" />
+
+    <ImageView
+        android:id="@+id/activity_register_username_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/login_account"
+        app:layout_constraintBottom_toBottomOf="@id/activity_register_username_editText"
+        app:layout_constraintLeft_toLeftOf="@id/activity_register_username_editText"
+        app:layout_constraintTop_toTopOf="@id/activity_register_username_editText" />
+
+    <EditText
+        android:id="@+id/activity_register_password_editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/activity_register_password_editText2"/>
+
+    <ImageView
+        android:id="@+id/activity_register_password_icon1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/login_password"
+        app:layout_constraintBottom_toBottomOf="@id/activity_register_password_editText2"
+        app:layout_constraintLeft_toLeftOf="@id/activity_register_password_editText2"
+        app:layout_constraintTop_toTopOf="@id/activity_register_password_editText2" />
+
+    <EditText
+        android:id="@+id/activity_register_password_editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="再次输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/activity_register_password_icon2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/login_password"
+        app:layout_constraintBottom_toBottomOf="@id/activity_register_password_editText1"
+        app:layout_constraintLeft_toLeftOf="@id/activity_register_password_editText1"
+        app:layout_constraintTop_toTopOf="@id/activity_register_password_editText1" />
+
+    <Button
+        android:id="@+id/activity_register_submit_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="30sp"
+        app:layout_constraintRight_toRightOf="@id/activity_register_password_editText2"
+        app:layout_constraintLeft_toLeftOf="@id/activity_register_password_editText2"
+        app:layout_constraintTop_toBottomOf="@id/activity_register_password_editText2" />
+
+
+</android.support.constraint.ConstraintLayout>

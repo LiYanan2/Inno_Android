@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AcceptActivity">
+
+    <LinearLayout
+        android:id="@+id/liner_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activity_accept_username1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="stph"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_accept_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="计算机大楼"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toRightOf="@id/activity_accept_username1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_accept_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="18268121552"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toRightOf="@id/activity_accept_location"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/activity_accept_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="#E8E8E8"
+            app:layout_constraintTop_toBottomOf="@id/activity_accept_phone" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
